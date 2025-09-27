@@ -1,0 +1,22 @@
+SELECT 
+    TO_CHAR(u.usage_date, 'YYYY-MM') AS month,
+    SUM(u.amount) AS monthly_total,
+    SUM(SUM(u.amount)) OVER (
+        ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS running_total,
+    AVG(SUM(u.amount)) OVER (
+        ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')
+        ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
+    ) AS three_month_avg,
+    MIN(SUM(u.amount)) OVER (
+        ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS min_total,
+    MAX(SUM(u.amount)) OVER (
+        ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS max_total
+FROM usage_records u
+GROUP BY TO_CHAR(u.usage_date, 'YYYY-MM')
+ORDER BY month;

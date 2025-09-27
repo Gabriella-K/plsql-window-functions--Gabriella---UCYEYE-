@@ -1,0 +1,46 @@
+CREATE TABLE customers (
+    customer_id NUMBER PRIMARY KEY,
+    name VARCHAR2(100),
+    region VARCHAR2(50),
+    join_date DATE
+);
+
+•	Inserting data
+INSERT INTO customers VALUES (1001, 'Alice Uwase', 'Kigali', TO_DATE('2023-06-12','YYYY-MM-DD'));
+INSERT INTO customers VALUES (1002, 'Jean Bosco', 'Musanze', TO_DATE('2023-07-05','YYYY-MM-DD'));
+INSERT INTO customers VALUES (1003, 'Aline Mukamana', 'Huye', TO_DATE('2023-05-20','YYYY-MM-DD'));
+INSERT INTO customers VALUES (1004, 'Eric Nshimiyimana', 'Kigali', TO_DATE('2023-08-15','YYYY-MM-DD'));
+INSERT INTO customers VALUES (1005, 'Sandra Uwitonze', 'Rubavu', TO_DATE('2023-04-10','YYYY-MM-DD'));
+
+
+	Services Table
+CREATE TABLE services (
+    service_id NUMBER PRIMARY KEY,
+    service_name VARCHAR2(100),
+    category VARCHAR2(50)
+);
+
+•	Inserting data
+INSERT INTO services VALUES (2001, 'Monthly Data Bundle', 'Data');
+INSERT INTO services VALUES (2002, 'Daily Voice Pack', 'Voice');
+INSERT INTO services VALUES (2003, 'SMS Pack', 'SMS');
+INSERT INTO services VALUES (2004, 'Mobile Money Transfer', 'Mobile Money');
+INSERT INTO services VALUES (2005, 'Weekend Data Bundle', 'Data');
+
+
+	Usage Records Table
+CREATE TABLE usage_records (
+    usage_id NUMBER PRIMARY KEY,
+    customer_id NUMBER REFERENCES customers(customer_id),
+    service_id NUMBER REFERENCES services(service_id),
+    usage_date DATE,
+    units_used VARCHAR2(50),
+    amount NUMBER
+);
+•	Inserting data
+INSERT INTO usage_records VALUES (3001, 1001, 2001, TO_DATE('2024-01-15','YYYY-MM-DD'), '2GB', 2500);
+INSERT INTO usage_records VALUES (3002, 1002, 2002, TO_DATE('2024-01-16','YYYY-MM-DD'), '60 minutes', 1500);
+INSERT INTO usage_records VALUES (3003, 1003, 2003, TO_DATE('2024-01-17','YYYY-MM-DD'), '100 SMS', 800);
+INSERT INTO usage_records VALUES (3004, 1004, 2004, TO_DATE('2024-01-18','YYYY-MM-DD'), 'RWF 5000', 5000);
+INSERT INTO usage_records VALUES (3005, 1005, 2005, TO_DATE('2024-01-19','YYYY-MM-DD'), '5GB', 6000);
+

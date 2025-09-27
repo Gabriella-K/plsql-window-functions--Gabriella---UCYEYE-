@@ -1,0 +1,10 @@
+SELECT 
+    c.customer_id,
+    c.name,
+    SUM(u.amount) AS total_spent,
+    NTILE(4) OVER (ORDER BY SUM(u.amount) DESC) AS spending_quartile,
+    CUME_DIST() OVER (ORDER BY SUM(u.amount) DESC) AS cume_distribution
+FROM usage_records u
+JOIN customers c ON u.customer_id = c.customer_id
+GROUP BY c.customer_id, c.name
+ORDER BY total_spent DESC;

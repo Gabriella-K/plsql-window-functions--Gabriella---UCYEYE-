@@ -1,0 +1,15 @@
+SELECT
+    TO_CHAR(u.usage_date, 'YYYY-MM') AS month,
+    SUM(u.amount) AS monthly_total,
+    LAG(SUM(u.amount)) OVER (ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')) AS prev_month_total,
+    CASE 
+        WHEN LAG(SUM(u.amount)) OVER (ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')) IS NULL
+        THEN NULL
+        ELSE ROUND(
+            (SUM(u.amount) - LAG(SUM(u.amount)) OVER (ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')))
+            / LAG(SUM(u.amount)) OVER (ORDER BY TO_CHAR(u.usage_date, 'YYYY-MM')) * 100, 2
+        )
+    END AS growth_percent
+FROM usage_records u
+GROUP BY TO_CHAR(u.usage_date, 'YYYY-MM')
+ORDER BY month;

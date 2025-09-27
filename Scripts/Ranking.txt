@@ -1,0 +1,12 @@
+SELECT 
+    c.customer_id,
+    c.name,
+    SUM(u.amount) AS total_spent,
+    ROW_NUMBER() OVER (ORDER BY SUM(u.amount) DESC) AS row_num,
+    RANK() OVER (ORDER BY SUM(u.amount) DESC) AS rank_num,
+    DENSE_RANK() OVER (ORDER BY SUM(u.amount) DESC) AS dense_rank_num,
+    PERCENT_RANK() OVER (ORDER BY SUM(u.amount) DESC) AS percent_rank_num
+FROM usage_records u
+JOIN customers c ON u.customer_id = c.customer_id
+GROUP BY c.customer_id, c.name
+ORDER BY total_spent DESC;
