@@ -22,6 +22,7 @@ Aggregate → Running totals, moving averages, min/max trends.
 ![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/630cf24c887bad5a82c8928abd89b9bddc4c6634/Screenshots/Aggregate.png)
 
 Navigation → Month-over-month growth comparisons.
+![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/85e1013ae8935a9d7d0fee46b054c4a9d38720c7/Screenshots/Navigation.png)
 
 Distribution → Customer segmentation (quartiles & cumulative distribution).
 ![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/b0c4a2d01110c1a8d220d167b3edf28d19d9e93f/Screenshots/Distribution.png)
