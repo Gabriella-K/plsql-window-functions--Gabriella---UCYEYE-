@@ -55,6 +55,7 @@ Focus retention efforts on top-quartile customers, improve service in underperfo
 Regular monitoring with window functions will help optimize marketing and customer support strategies.
 
 **Integrity statement**
+
 All sources were properly cited. Implementations and analysis represent original work. No AI generated content was copied without attribution or adaptation.
 
 created bv Gabriella UCYEYE  27673,
