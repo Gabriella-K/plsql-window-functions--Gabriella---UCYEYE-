@@ -23,6 +23,7 @@ Aggregate → Running totals, moving averages, min/max trends.
 Navigation → Month-over-month growth comparisons.
 
 Distribution → Customer segmentation (quartiles & cumulative distribution).
+![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/1c2393361dad02e4e790af1001f60c0f7c44ba2f/Screenshots/Aggregate.png)
 
 ##**Results Analysis**
 
