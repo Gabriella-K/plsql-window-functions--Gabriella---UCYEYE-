@@ -12,6 +12,8 @@ services → Catalog of telecom services (data, voice, SMS, mobile money).
 
 usage_records → Logs of customer transactions with services, amounts, and dates.
 
+![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/612c8e00ee352cbe0a2594349dec57696f9778cc/ERdiagram.png)
+
 ##**Window Functions Implemented**
 
 Ranking → Identify top customers by spending.
