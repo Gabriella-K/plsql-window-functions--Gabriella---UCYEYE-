@@ -1,3 +1,9 @@
+**Resources**
+https://techcabal.com/2025/06/12/rwanda-internet-penetration-rate/
+https://www.ecofinagency.com/news/3107-47923-mtn-rwanda-faces-service-issues-amid-network-investment-push
+https://www.apc.org/sites/default/files/CICEWARwanda_20090908_0.pdf
+https://www.youtube.com/watch?v=rIcB4zMYMas&t=12s
+https://www.youtube.com/watch?v=Ww71knvhQ-s
 #**Project Overview**
 
 This project analyzes telecom customer usage in Rwanda using PL/SQL with window functions.
@@ -41,3 +47,9 @@ Growth fluctuations are linked to seasonal demand and customer switching between
 **Prescriptive**:
 Focus retention efforts on top-quartile customers, improve service in underperforming regions, and design flexible plans to smooth out seasonal declines. 
 Regular monitoring with window functions will help optimize marketing and customer support strategies.
+
+**Integrity statement**
+All sources were properly cited. Implementations and analysis represent original work. No AI generated content was copied without attribution or adaptation.
+
+created bv Gabriella UCYEYE  27673
+Date:29/09/2025
