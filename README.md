@@ -1,4 +1,5 @@
 **Resources**
+
 https://techcabal.com/2025/06/12/rwanda-internet-penetration-rate/,
 
 https://www.ecofinagency.com/news/3107-47923-mtn-rwanda-faces-service-issues-amid-network-investment-push,
