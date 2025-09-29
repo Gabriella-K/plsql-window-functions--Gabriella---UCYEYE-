@@ -19,6 +19,7 @@ usage_records → Logs of customer transactions with services, amounts, and date
 Ranking → Identify top customers by spending.
 
 Aggregate → Running totals, moving averages, min/max trends.
+![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/630cf24c887bad5a82c8928abd89b9bddc4c6634/Screenshots/Aggregate.png)
 
 Navigation → Month-over-month growth comparisons.
 
