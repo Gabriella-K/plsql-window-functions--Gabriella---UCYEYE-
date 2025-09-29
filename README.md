@@ -57,5 +57,6 @@ Regular monitoring with window functions will help optimize marketing and custom
 **Integrity statement**
 All sources were properly cited. Implementations and analysis represent original work. No AI generated content was copied without attribution or adaptation.
 
-created bv Gabriella UCYEYE  27673
+created bv Gabriella UCYEYE  27673,
+
 Date:29/09/2025
