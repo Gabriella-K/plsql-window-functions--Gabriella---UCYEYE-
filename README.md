@@ -17,6 +17,7 @@ usage_records → Logs of customer transactions with services, amounts, and date
 ##**Window Functions Implemented**
 
 Ranking → Identify top customers by spending.
+![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/9306e905a1e05a8faca4c17213a0629b9ed835c6/Screenshots/Ranking.png)
 
 Aggregate → Running totals, moving averages, min/max trends.
 ![img alt](https://github.com/Gabriella-K/plsql-window-functions--Gabriella---UCYEYE-/blob/630cf24c887bad5a82c8928abd89b9bddc4c6634/Screenshots/Aggregate.png)
